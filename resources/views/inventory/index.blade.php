@@ -24,6 +24,38 @@
     </div>
     <div class="section">
         <div class="container">
+
+            {{--<table class="table table-responsive">
+
+                <thead >
+                @foreach($allProduct as $letter => $productCollection)
+                    <th class="letter-group">
+                        <h3 class="title is-1 letter">{{$letter}}</h3>
+                    </th>
+
+
+
+                </thead>
+
+               <tbody>
+                @foreach($productCollection as $products)
+
+                <tr>
+
+                        <td class="title is-5">
+                          <li>
+                              <a href="/selectProduct/{{$products->p_name}}">{{$products->p_name}}</a>
+                          </li>
+                        </td>
+
+
+                </tr>
+                @endforeach
+                </tbody>
+                @endforeach
+            </table>--}}
+
+
             <ul class="has-columns">
                 @foreach($allProduct as $letter => $prductCollection)
                     <div class="letter-group">
