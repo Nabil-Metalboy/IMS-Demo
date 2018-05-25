@@ -18,3 +18,13 @@ Route::get('/', function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/cont', 'addProductCont@index');
+
+
+Route::get('/{$products-> p_name}', 'HomeController@edit');
+
+Route::resource('/selectedProduct', 'updateProduct@index');
+
+
+

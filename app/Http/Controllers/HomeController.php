@@ -38,6 +38,12 @@ class HomeController extends Controller
         //return view('inventory.index',['productStartWithA'=>$viewAll]);
     }
 
+    public function edit()
+    {
+        $edit_value = Product:: $products->p_name;
+        redirect('inventory.edit', ['name' => $edit_value]);
+    }
+
     public function display()
     {
         

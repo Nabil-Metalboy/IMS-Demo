@@ -20,7 +20,6 @@
 
 
 
-
     </div>
     <div class="section">
         <div class="container">
@@ -58,13 +57,14 @@
 
             <ul class="has-columns">
                 @foreach($allProduct as $letter => $prductCollection)
-                    <div class="letter-group">
+
+                    <div class="col-md-1">
                         <h3 class="title is-1 letter">{{$letter}}</h3>
 
                         <ul>
                             @foreach($prductCollection as $products)
                                 <li class="title is-5">
-                                    <a href="/selectProduct/{{$products->p_name}}">{{$products->p_name}}</a>
+                                    <a href="/selectedProduct/{{$products-> id}}">{{$products-> p_name}}</a>
                                 </li>
                                 @endforeach
                         </ul>
